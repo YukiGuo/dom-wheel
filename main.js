@@ -1,0 +1,12 @@
+//创建
+const divC1 = dom.create(`<div>绘画<span></span></div>`)
+const divC2 = dom.create(`<h4>红色</h4>`)
+// 增加
+dom.after(test, divC1)
+
+
+const div = dom.find('#test>.red')[0] // 获取对应的元素
+//添加样式
+dom.style(div, 'color', 'red') // 设置 div.style.color
+const divList = dom.find('.red') // 获取多个 div.red 元素
+dom.each(divList, (n) => console.log(n)) // 遍历 divList 里的所有元素
